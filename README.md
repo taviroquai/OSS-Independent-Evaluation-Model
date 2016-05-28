@@ -5,50 +5,53 @@ NOTE: THIS IS A WORK IN PROGRESS
 
 ## Abstract
 
-This paper purpose is to describe an independent model to evaluate open-source software including it’s project, using pragmatic and independant methods and tests. It is constituted by two main approuches, the objective and subjective. The model described here aims to provide a quatitative overview of the software and it’s project quality to help in decision-making.
+This paper purpose is to describe an independent model to evaluate open-source software including it’s project, using pragmatic and independent methods and tests. It is constituted by two main approaches, the objective and subjective. The model described here aims to provide a quantitative overview of the software and it’s project quality to help in decision-making.
 
 ## 1. Approaches, Methods and Tests Overview
 
 Evaluation approaches are conceptually distinct ways of thinking about, designing, and conducting evaluation efforts.[6]
 
-In this paper, it will be considered two main approuches for evaluating software and it’s projects quality: Objective Approuch and Subjective Approuch. The evaluations results are only valid if the tests listed below are run by at least two independant entities.
+In this paper, it will be considered two main approaches for evaluating software and it’s projects quality: Objective Approach and Subjective Approach. The evaluations results are only valid if the tests listed below are run by at least two independent entities.
 
 Considering software as an object, and a set of services that aims to solve problems, it can be evaluated objectively, based on software quality principles[7].
 
-When considering subjective evaluation approuches, it is important to use independant entities and blind checks reviews to eliminate bias and validate evaluation transparency and credibility[5].
+When considering subjective evaluation approaches, it is important to use independent entities and blind checks reviews to eliminate bias and validate evaluation transparency and credibility[5].
 
-This model also uses a strong emphasis on Occam's razor by intesecting the results obtained on the several tests. For example, if the condition S4R > (S2R + S3R) is true, currently the project can be described as a hype.
+This model also uses a strong emphasis on Occam's razor by intersecting the results obtained on the several tests. For example, if the condition S4R > (S2R + S3R) is true, currently the project can be described as a hype.
 
 ### 1.1 Objective Approach
+
 Constitutes a set of objective methods / tests for evaluating the software and it’s project. Each of the following methods will be extensively described below. An Objective Method / Test is identified by starting with “O” following by a number.
 
  - **O1**: Software Quality Assurance Metrics - a set of software qualities evaluation results  
  - **O2**: Data Usage Contexts - evaluates the functional areas where the software can be used to manipulate the data.  
- - **O3**: Interopability: evaluates the software capabilities to comunicate / intergrate with other software  
+ - **O3**: Interoperability: evaluates the software capabilities to communicate / integrate with other software  
  - **O4**: Dependencies: evaluates how much dependent the software is  
  - **O5**: Software License - evaluation of the the licensing terms in respect of open-source freedoms/restrictions, incluing source code forkability.  
 
 ### 1.2 Subjective Approach
+
 Constitutes a set of methods / tests in which the object under study cannot be mathematically calculated. Each of the following methods will be extensively described below. A Subjective Method / Test is identified by starting with “S” followed by a number.
 
  - **S1**: Software Documentation: evaluation of the software user manual, API reference, examples and tutorials, in text, video or other formats.  
  - **S2**: Blind User Experience - a set of independent user experiments evaluation using the software  
- - **S3**: Blind Connoisseur - an independant review by an high qualified person in the technologies used by the software  
+ - **S3**: Blind Connoisseur - an independent review by an high qualified person in the technologies used by the software  
  - **S4**: Opinion Polling - evaluation of the project members and project’s comunity  
  - **S5**: Accreditation - an evaluation of the project’s credits given by official organizations.  
 
 ### 1.3 Tests Results
+
 Each evaluation test has a relative variable result. It can be identified starting with the test identifier followed by the letter R, ie. O1R.
 
-For easy calculation, it is recomended that each variable should be an integer between 0 and 9, and having POINTS as units.
+For easy calculation, it is recommended that each variable should be an integer between 0 and 9, and having POINTS as units.
 
-### 1.4 Ponderation
-Each evaluation test has a relative, and constant, ponderation weight. 
-Ponderation weights identified starting with it’s relative test identifier, followed by letter P, ie. S1P.
+### 1.4 Weighting
+Each evaluation test has a relative and constant weighting. 
+Weightings are identified starting with it’s relative test identifier, followed by letter P, ie. S1P.
 
-A priori, an equal ponderation weight among all evaluation tests should give the most balanced results. The more differences in weight exists amoung the ponderation, the more unbalanced the results will be.
+A priori, an equal weighting among all evaluation tests should give the most balanced results. The more differences in exists amoung wightings, the more unbalanced the results will be.
 
-It is recomended that a ponderation weight must be a constant and integer. Also the sum of all ponderation weights should be 100. The ponderation weight units are POINTS.
+It is recomended that a weighting value must be a constant and integer. Also the sum of all weightings should be 100. The  weighting units are POINTS.
 
 ## 2. Formula
 ```
@@ -68,7 +71,7 @@ Result = 391 points
 ```
 
 ## 3. Evaluation Exclusion Criteria
-A list of defined exclusion criteria should be published together with the ponderation weights.
+A list of defined exclusion criteria should be published together with weightings.
 
 ### 3.1 Example
 
@@ -77,10 +80,10 @@ O1R x O1P < 50
 ```
 
 ## 4. Usage
-For the saque of transparency of the evaluation process, the evaluation is valid if the following items are publish along with the evaluation process:  
+In favor of transparency of the evaluation process, the evaluation is valid if the following items are publish along with the evaluation process:  
  - The evaluation model (this)  
  - The evaluation formula  
- - The ponderation weights  
+ - The evaluation weightings  
  - The list of exclusion criterias  
  - The name of the independent entities that will run the methods  
  - The results of each test  
@@ -107,7 +110,7 @@ This method aims to reveal the total of contexts the software can be used.
 
 
 ## O3 - Interoperability
-This test aims to reveal the total operations that can be used by third-party software. It measures the software capabilities for comunicating and integrating with other software. It can also take into account how many changes the software has suffer to comunicate / integrate with other software.
+This test aims to reveal the total operations that can be used by third-party software. It measures the software capabilities for communicating and integrating with other software. It can also take into account how many changes the software has suffer to communicate / integrate with other software.
 
 ## O4 - Dependencies
 This test aims to reveal the total of the software dependencies to run. For each depency, should be considered a new overall evaluation.
@@ -119,13 +122,13 @@ This test aims to reveal the total of freedoms and restrictions that are inheren
 This method aims to reveal the quality and quantity of the software documentation for software users.
 
 ## S2 - Blind User Experience
-This method aims to reveal usability problems, but also, reveals independant acceptance of the software usage, which is very important to reduce human bias and reputation influencies. Must be used with S1. Evaluates individual user experience with the software. The user must know nothing about the software creators, distribution trademarks or any signs that invalidates the blind experience. Best results are obtained with larger user sample.
+This method aims to reveal usability problems, but also, reveals independent acceptance of the software usage, which is very important to reduce human bias and reputation influencies. Must be used with S1. Evaluates individual user experience with the software. The user must know nothing about the software creators, distribution trademarks or any signs that invalidates the blind experience. Best results are obtained with larger user sample.
 
 ## S3 - Blind Connoisseur Peer Review
 This method aims to reveal hidden potential of the software, that is not known by normal users. Submit the software to peer review to a specialized user with high knowledge of the technologies used by the software. Also as in S2, these specialized user must know nothing about the software creator, distributor, trademarks or any sigh that invalidates the blind experience. Aquired the resulting review.
 
 ## S4 - Public Opinion
-This method aims to reveal how much evolved the project is on the social area. Use independant entities to measure project comunity and it’s activity. Evaluate the total number of project members and comunity members.
+This method aims to reveal how much evolved the project is on the social area. Use independent entities to measure project comunity and it’s activity. Evaluate the total number of project members and comunity members.
 
 ## S5 - Accreditation
 This method aims to reveal how much credits the project has received from official organizations. Evaluate the total number of official organizations.
@@ -141,7 +144,9 @@ Open Source Software - computer software with its source code made available wit
 Evaluation Model -  is the process of judging something or someone based on a set of standards[4]. It is also a set of evaluation methods and technics to measure the object in study.  
 
 ## 6. References 
+
 TODO - Replace some wikipedia references  
+
 [1] Wikipedia (2016) - https://en.wikipedia.org/wiki/Project  
 [2] Wikipedia (2016)- https://en.wikipedia.org/wiki/Software  
 [3]  St. Laurent, Andrew M. (2008). Understanding Open Source and Free Software Licensing. O'Reilly Media. p. 4. ISBN 9780596553951.  
