@@ -49,7 +49,7 @@ For easy calculation, it is recommended that each variable should be an integer 
 Each evaluation test has a relative and constant weighting. 
 Weightings are identified starting with it’s relative test identifier, followed by letter P, ie. S1P.
 
-A priori, an equal weighting among all evaluation tests should give the most balanced results. The more differences in exists amoung wightings, the more unbalanced the results will be.
+*A priori*, an equal weighting among all evaluation tests should give the most balanced results. The more differences exists amoung weightings, the more unbalanced the results will be.
 
 It is recomended that a weighting value must be a constant and integer. Also the sum of all weightings should be 100. The  weighting units are POINTS.
 
@@ -92,21 +92,21 @@ In favor of transparency of the evaluation process, the evaluation is valid if t
 ## O1 - Software Quality Assurance Metrics
 This method aims to reveal the software quality in general. All tests should be run by an independant third-party. The following known metrics should be evaluated.
 
- - Reliability / Stability - Run tests that can break the application at run-time, that affect users expectations or companies business, as of: introduce changes to the source code; large user input; introduce changes in data storage, etc...  
- - Efficiency - The source code and software architecture attributes that ensure high performance once the application is in run-time mode. The measurements of time and space required of the software operations / services.  
- - Security - A measure of the likelihood of potential security breaches due to poor coding practices and architecture. This quantifies the risk of encountering critical vulnerabilities that compromises important information.  
- - Maintainability - Measures source-code size, forkability, documentation, and other factors that turns hard to make improvements or apply corrections to the source-code.  
- - Portability - Measures in which enviroments the software can be executed.  
- - Usability - Measures the software interface usage against users of different cultures, education level and handycaped.  
+ - **Reliability / Stability** - Run tests that can break the application at run-time, that affect users expectations or companies business, as of: introduce changes to the source code; large user input; introduce changes in data storage, etc...  
+ - **Efficiency** - The source code and software architecture attributes that ensure high performance once the application is in run-time mode. The measurements of time and space required of the software operations / services.  
+ - **Security** - A measure of the likelihood of potential security breaches due to poor coding practices and architecture. This quantifies the risk of encountering critical vulnerabilities that compromises important information.  
+ - **Maintainability** - Measures source-code size, forkability, documentation, and other factors that turns hard to make improvements or apply corrections to the source-code.  
+ - **Portability** - Measures in which enviroments the software can be executed.  
+ - **Usability** - Measures the software interface usage against users of different cultures, education level and handycaped.  
 
 ## O2 - Data Usage Contexts
 This method aims to reveal the total of contexts the software can be used.
 
- - Publishing - Evaluates the number of the operations available to publish the data;  
- - Management - Evaluates the number of the operations available to organize and manage the data;  
- - Analysis - Evaluates the number of the operations available to analyse and obtain analysis reports of the data;  
- - Transformational - Evaluates the number of the operations available that can transform the data;  
- - Entertainment - Evaluates the number of the operations available that serves the data as entertaiment.  
+ - **Publishing** - Evaluates the number of the operations available to publish the data;  
+ - **Management** - Evaluates the number of the operations available to organize and manage the data;  
+ - **Analysis** - Evaluates the number of the operations available to analyse and obtain analysis reports of the data;  
+ - **Transformational** - Evaluates the number of the operations available that can transform the data;  
+ - **Entertainment** - Evaluates the number of the operations available that serves the data as entertaiment.  
 
 
 ## O3 - Interoperability
