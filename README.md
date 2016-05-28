@@ -145,7 +145,7 @@ Evaluation Model -  is the process of judging something or someone based on a se
 
 ## 6. References 
 
-TODO - Replace some wikipedia references  
+TODO - Work on references  
 
 [1] Wikipedia (2016) - https://en.wikipedia.org/wiki/Project  
 [2] Wikipedia (2016)- https://en.wikipedia.org/wiki/Software  
