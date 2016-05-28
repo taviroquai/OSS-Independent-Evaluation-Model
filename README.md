@@ -1,6 +1,8 @@
 
 # An Independent Evaluation Model for Open-source Software
 
+NOTE: THIS IS A WORK IN PROGRESS  
+
 ## Abstract
 
 This paper purpose is to describe an independent model to evaluate open-source software including it’s project, using pragmatic and independant methods and tests. It is constituted by two main approuches, the objective and subjective. The model described here aims to provide a quatitative overview of the software and it’s project quality to help in decision-making.
