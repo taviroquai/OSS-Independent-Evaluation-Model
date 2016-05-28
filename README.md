@@ -95,7 +95,7 @@ This method aims to reveal the software quality in general. All tests should be 
  - **Reliability / Stability** - Run tests that can break the application at run-time, that affect users expectations or companies business, as of: introduce changes to the source code; large user input; introduce changes in data storage, etc...  
  - **Efficiency** - The source code and software architecture attributes that ensure high performance once the application is in run-time mode. The measurements of time and space required of the software operations / services.  
  - **Security** - A measure of the likelihood of potential security breaches due to poor coding practices and architecture. This quantifies the risk of encountering critical vulnerabilities that compromises important information.  
- - **Maintainability** - Measures source-code size, forkability, documentation, and other factors that turns hard to make improvements or apply corrections to the source-code.  
+ - **Maintainability** - Measures source-code size, forkability, documentation, project managementand other factors that turns hard to make improvements or apply corrections to the source-code.  
  - **Portability** - Measures in which enviroments the software can be executed.  
  - **Usability** - Measures the software interface usage against users of different cultures, education level and handycaped.  
 
@@ -115,8 +115,8 @@ This test aims to reveal the total operations that can be used by third-party so
 ## O4 - Dependencies
 This test aims to reveal the total of the software dependencies to run. For each depency, should be considered a new overall evaluation.
 
-## O5 - Software License
-This test aims to reveal the total of freedoms and restrictions that are inherent to the license policy.
+## O5 - Software License and Project Governance Model
+This test aims to reveal the total of freedoms and restrictions that are inherent to the license policy, as well taking into account, objectively, the pros and cons of the project's governance model.
 
 ## S1 - Software Documentation
 This method aims to reveal the quality and quantity of the software documentation for software users.
