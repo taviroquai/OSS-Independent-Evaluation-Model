@@ -36,7 +36,7 @@ Constitutes a set of methods / tests in which the object under study cannot be m
  - **S1**: Software Documentation: evaluation of the software user manual, API reference, examples and tutorials, in text, video or other formats.  
  - **S2**: Blind User Experience - a set of independent user experiments evaluation using the software  
  - **S3**: Blind Connoisseur - an independent review by an high qualified person in the technologies used by the software  
- - **S4**: Opinion Polling - evaluation of the project members and project’s comunity  
+ - **S4**: Public Opinion - evaluation of the project members and project’s comunity  
  - **S5**: Accreditation - an evaluation of the project’s credits given by official organizations.  
 
 ### 1.3 Tests Results
