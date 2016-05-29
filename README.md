@@ -77,8 +77,8 @@ IE1 = (5x11 + 4x11 + 3x11 + 2x11 + 1x11 + 2x11 + 3x11 + 4x11 + 5x11 + 6x12) / 90
 IE1 = 0,43
 ```
 
-### 2.2 All Independente Evaluations
-All Independante Evaluations should be considered. The total result is identified by TOTAL and is the medium value amoung all individual evaluations. The total is a floating point value, rounded to 2 decimal places.  
+### 2.2 All Individual Evaluations
+All Individual Evaluations should be considered as a whole. The total result is identified by TOTAL and is the medium value amoung all individual evaluations. The total is a floating point value, rounded to 2 decimal places.  
 
 ```
 TOTAL = (IE1 + IE2 ... + IEN) / N
@@ -120,7 +120,7 @@ VAR = 0,25;
 
 
 ## 4. Validation Process
-In favor of transparency of the evaluation process, the evaluation is valid if the following items are publish along with the evaluation process:  
+In favor of transparency of the evaluation process, the evaluation **is only considered valid** if the following items are publish along with the evaluation process:  
  - The reference to the evaluation model (this)  
  - The evaluation formula  
  - The evaluation weightings  
@@ -131,7 +131,7 @@ In favor of transparency of the evaluation process, the evaluation is valid if t
  - The result of the Confirmation
  
 ## O1 - Software Quality Assurance Metrics
-This method aims to reveal the software quality in general. All tests should be run by an independant third-party. The following known metrics should be evaluated.
+This method aims to reveal the software quality in general. All tests should be run by an independant entity. The following known metrics should be evaluated.
 
  - **Reliability / Stability** - Run tests that can break the application at run-time, that affect users expectations or companies business, as of: introduce changes to the source code; large user input; introduce changes in data storage, etc...  
  - **Efficiency** - The source code and software architecture attributes that ensure high performance once the application is in run-time mode. The measurements of time and space required of the software operations / services.  
@@ -195,3 +195,4 @@ TODO - Work on references
 [5] https://www.elsevier.com/reviewers/what-is-peer-review  
 [6] Wikipedia (2016) - https://en.wikipedia.org/wiki/Evaluation_approaches  
 [7] Wikipedia (2016) - https://en.wikipedia.org/wiki/Software_quality  
+[8] 
