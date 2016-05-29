@@ -53,23 +53,41 @@ Weightings are identified starting with it’s relative test identifier, followe
 
 It is recomended that a weighting value must be a constant and integer. Also the sum of all weightings should be 100. The  weighting units are POINTS.
 
-## 2. Formula
+## 2. Formulas
+### 2.1 Individual Evaluation
+The maximum points that can be obtained is identified by MAX and is an integer.  
+The individual evaluation is identifies by IE followed by the evaluation number, and is a floating point, rounded to 2 decimal places.  
+
 ```
-Result = [O1R ... ONR] + [S1R ... SNR] = [O1 * O1P ... ON * ONP] + [S1 * S1P ... SN * SNP]
+IE1 = ([O1 * O1P ... ON * ONP] + [S1 * S1P ... SN * SNP]) / MAX
 ```
 
-### 2.1 Example
-Minimum of 0 points;  
-Maximum of 901 points;  
+#### 2.1.1 Example
 ```
+MAX = 901;
 O1 = 5; O2 = 4; O3 = 3; O4 = 2; O5 = 1;  
 S1 = 2; S2 = 3; S3 = 4; S4 = 5; S5 = 6;  
 O1P = 11; O2P = 11; O3P = 11; O4P = 11; O5P = 11;  
 S1P = 11; S2P = 11; S3P = 11; S4P = 11; S5P = 12;  
-Result = 5x11 + 4x11 + 3x11 + 2x11 + 1x11 + 2x11 + 3x11 + 4x11 + 5x11 + 6x12  
-Result = 391 points  
+IE1 = (5x11 + 4x11 + 3x11 + 2x11 + 1x11 + 2x11 + 3x11 + 4x11 + 5x11 + 6x12) / 901 = 391 / 901  POINTS
+IE1 = 0,43
 ```
 
+### 2.2 All Independente Evaluations
+All Independante Evaluations should be considered. The total result is identified by TOTAL and is the medium value amoung all individual evaluations. The total is a floating point value, rounded to 2 decimal places.  
+
+```
+TOTAL = (IE1 + IE2 ... + IEN) / N
+```
+
+#### 2.2.1 Example
+```
+N = 2;
+IE1 = 0,43;
+IE2 = 0,40;
+TOTAL = 0,43 + 0,50 / 2
+TOTAL = 0,46
+```
 ## 3. Evaluation Exclusion Criteria
 A list of defined exclusion criteria should be published together with weightings.
 
@@ -79,15 +97,23 @@ A list of defined exclusion criteria should be published together with weighting
 O1R x O1P < 50
 ```
 
-## 4. Usage
+## 4. Validation Process
 In favor of transparency of the evaluation process, the evaluation is valid if the following items are publish along with the evaluation process:  
- - The evaluation model (this)  
+ - The reference to the evaluation model (this)  
  - The evaluation formula  
  - The evaluation weightings  
  - The list of exclusion criterias  
- - The name of the independent entities that will run the methods  
- - The results of each test  
- - The final result  
+ - The name of the independent entities that will run the evaluation tests  
+ - The reports of the individual evaluation [IE1 ... IEN] specifying the results of each test  
+ 
+### 4.1 Confirmation
+Variation is a constant and floating point value that is used to confirm the independent evaluation results. It is identified by VAR and must be less, or equal, a quarter of 1: VAR <= 0,25.
+The less the varition is, the more the independent results confirmation is fiable
+Finaly, it is to say that a the Open-source Software Value was confirmed when the difference of the minimum IE and the maximum IE is less than the variation, otherwise, the Software value could not be confirmed.  
+
+```
+VAR >= (MAX(IE1 ... IEN) - MIN(IE1 ... IEN))
+```
 
 ## O1 - Software Quality Assurance Metrics
 This method aims to reveal the software quality in general. All tests should be run by an independant third-party. The following known metrics should be evaluated.
