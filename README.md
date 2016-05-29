@@ -71,37 +71,22 @@ IE1 = ([O1 * O1P ... ON * ONP] + [S1 * S1P ... SN * SNP]) / MAX
 MAX = 901;
 O1 = 5; O2 = 4; O3 = 3; O4 = 2; O5 = 1;  
 S1 = 2; S2 = 3; S3 = 4; S4 = 5; S5 = 6;  
-O1P = 11; O2P = 11; O3P = 11; O4P = 11; O5P = 11;  
-S1P = 11; S2P = 11; S3P = 11; S4P = 11; S5P = 12;  
-IE1 = (5x11 + 4x11 + 3x11 + 2x11 + 1x11 + 2x11 + 3x11 + 4x11 + 5x11 + 6x12) / 901 = 391 / 901  POINTS
-IE1 = 0,43
+O1P = 10; O2P = 10; O3P = 10; O4P = 10; O5P = 10;  
+S1P = 10; S2P = 10; S3P = 10; S4P = 10; S5P = 10;  
+IE1 = (5x10 + 4x10 + 3x10 + 2x10 + 1x10 + 2x10 + 3x10 + 4x10 + 5x10 + 6x10) / 900 = 391 / 900  POINTS
+IE1 = 0.39
 ```
 
-### 2.2 All Individual Evaluations
-All Individual Evaluations should be considered as a whole. The total result is identified by TOTAL and is the medium value amoung all individual evaluations. The total is a floating point value, rounded to 2 decimal places.  
-
-```
-TOTAL = (IE1 + IE2 ... + IEN) / N
-```
-
-#### 2.2.1 Example
-```
-N = 2;
-IE1 = 0,43;
-IE2 = 0,40;
-TOTAL = 0,43 + 0,50 / 2
-TOTAL = 0,46
-```
-### 2.3. Evaluation Exclusion Criteria
+### 2.2. Evaluation Exclusion Criteria
 A list of defined exclusion criteria should be published together with weightings.
 
-#### 2.3.1 Example
+#### 2.2.1 Example
 
 ```
 O1R x O1P < 50
 ```
 
-### 2.4 Confirmation Variation
+### 2.3 Confirmation Variation
 Because this model uses Subjective tests to evaluate the object of study, it is almost impossible to obtain exactly the same value among all the independant results, thus, it is necessary to introduce a Variation value that creates a range where the diferences of the independent results can be considered.
 Variation is a constant and a floating point value that is used to confirm the independent evaluation results. It is identified by VAR and must be less, or equal, a quarter of 1: VAR <= 0,25.
 The less the varition is, the more the independent results confirmation is fiable.  
@@ -111,7 +96,7 @@ The **Confirmation** is the difference of the minimum IE and the maximum IE is l
 VAR >= (MAX(IE1 ... IEN) - MIN(IE1 ... IEN))
 ```
 
-#### 2.4.1 Example
+#### 2.3.1 Example
 ```
 VAR = 0,25;
 0,25 >= (0,50 - 0,43)
@@ -119,7 +104,7 @@ VAR = 0,25;
 ```
 
 
-## 4. Validation Process
+## 3. Validation Process
 In favor of transparency of the evaluation process, the evaluation **is only considered valid** if the following items are publish along with the evaluation process:  
  - The reference to the evaluation model (this)  
  - The evaluation formula  

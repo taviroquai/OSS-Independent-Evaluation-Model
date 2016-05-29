@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Calculator - OSS Independent Evaluation Model</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        .col-info {
+            font-size: 80%;
+        }
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+    <div class="container-fluid">
+        
+        <!-- Calculator heading -->
+        <div class="row">
+            <div class="col-md-12">
+                
+                <h1>Calculator</h1>
+
+                <h4>Open-source Software Independent Evaluation Model <em>(OSS-IEM)</em></h4>
+
+                <p>This is an HTML5 Calculator that implementats the OSS-IEM.</p>
+                
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div id="result" class="alert alert-success"></div>
+            </div>
+        </div>
+        
+        <!-- Calculator form -->
+        <form action="#" method="post">
+        
+            <!-- O1 Test Result -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>O1 - Software Quality Assurance Metrics</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    Result: <input type="number" name="o1r" id="o1r" min="0" max="9" placeholder="Enter value..." />
+                    Weight: <input type="number" name="o1p" id="o1p" placeholder="Enter weighting value..." />
+                </div>
+                <div class="col-md-6 col-info">
+                    <p>This method aims to reveal the software quality in general. All tests should be run by an independant entity. The following known metrics should be evaluated.</p>
+                    <p>Enter here the average of the following evaluated metrics: Reliability / Stability, Efficiency, Security, Maintainability, Portability and Usability</p>
+                    <p>For more infomation, please see <a href="../README.md">README</a></p>
+                </div>
+            </div>
+            
+            <!-- O2 Test Result -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>O2 - Data Usage Functional Contexts</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    Result: <input type="number" name="o2r" id="o2r" min="0" max="9" placeholder="Enter value..." />
+                    Weight: <input type="number" name="o2p" id="o2p" placeholder="Enter weighting value..." />
+                </div>
+                <div class="col-md-6 col-info">
+                    <p>This method aims to reveal the total of contexts the software can be used.</p>
+                    <p>Enter here the average of the following evaluated criteria: publishing, management, analysis, transformational and entertainment</p>
+                    <p>For more infomation, please see <a href="../README.md">README</a></p>
+                </div>
+            </div>
+            
+            <!-- O3 Test Result -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>O3 - Interoperability</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    Result: <input type="number" name="o3r" id="o3r" min="0" max="9" placeholder="Enter value..." />
+                    Weight: <input type="number" name="o3p" id="o3p" placeholder="Enter weighting value..." />
+                </div>
+                <div class="col-md-6 col-info">
+                    <p>This test aims to reveal the total operations that can be used by third-party software. It measures the software capabilities for communicating and integrating with other software. It can also take into account how many changes the software has suffer to communicate / integrate with other software.</p>
+                    <p>For more infomation, please see <a href="../README.md">README</a></p>
+                </div>
+            </div>
+            
+            <!-- O4 Test Result -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>O4 - Dependencies</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    Result: <input type="number" name="o4r" id="o4r" min="0" max="9" placeholder="Enter value..." />
+                    Weight: <input type="number" name="o4p" id="o4p" placeholder="Enter weighting value..." />
+                </div>
+                <div class="col-md-6 col-info">
+                    <p>This test aims to reveal the total of the software dependencies to run. For each depency, should be considered a new overall evaluation.</p>
+                    <p>For more infomation, please see <a href="../README.md">README</a></p>
+                </div>
+            </div>
+            
+            <!-- O5 Test Result -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>O5 - Software License and Project Governance Model</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    Result: <input type="number" name="o5r" id="o5r" min="0" max="9" placeholder="Enter value..." />
+                    Weight: <input type="number" name="o5p" id="o5p" placeholder="Enter weighting value..." />
+                </div>
+                <div class="col-md-6 col-info">
+                    <p>This test aims to reveal the total of freedoms and restrictions that are inherent to the license policy, as well taking into account, objectively, the pros and cons of the project's governance model.</p>
+                    <p>For more infomation, please see <a href="../README.md">README</a></p>
+                </div>
+            </div>
+            
+            <!-- S1 Test Result -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>S1 - Software Documentation</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    Result: <input type="number" name="s1r" id="s1r" min="0" max="9" placeholder="Enter value..." />
+                    Weight: <input type="number" name="s1p" id="s1p" placeholder="Enter weighting value..." />
+                </div>
+                <div class="col-md-6 col-info">
+                    <p>This test evaluates of the software user manual, API reference, examples and tutorials, in text, video or other formats.</p>
+                    <p>For more infomation, please see <a href="../README.md">README</a></p>
+                </div>
+            </div>
+            
+            <!-- S2 Test Result -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>S2 - Blind User Experience</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    Result: <input type="number" name="s2r" id="s2r" min="0" max="9" placeholder="Enter value..." />
+                    Weight: <input type="number" name="s2p" id="s2p" placeholder="Enter weighting value..." />
+                </div>
+                <div class="col-md-6 col-info">
+                    <p>This method aims to reveal usability problems, but also, reveals independent acceptance of the software usage, which is very important to reduce human bias and reputation influencies. Must be used with S1. Evaluates individual user experience with the software. The user must know nothing about the software creators, distribution trademarks or any signs that invalidates the blind experience. Best results are obtained with larger user sample.</p>
+                    <p>For more infomation, please see <a href="../README.md">README</a></p>
+                </div>
+            </div>
+            
+            <!-- S3 Test Result -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>S3 - Blind Connoisseur Peer Review</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    Result: <input type="number" name="s3r" id="s3r" min="0" max="9" placeholder="Enter value..." />
+                    Weight: <input type="number" name="s3p" id="s3p" placeholder="Enter weighting value..." />
+                </div>
+                <div class="col-md-6 col-info">
+                    <p>This method aims to reveal hidden potential of the software, that is not known by normal users. Submit the software to peer review to a specialized user with high knowledge of the technologies used by the software. Also as in S2, these specialized user must know nothing about the software creator, distributor, trademarks or any sigh that invalidates the blind experience. Aquired the resulting review.</p>
+                    <p>For more infomation, please see <a href="../README.md">README</a></p>
+                </div>
+            </div>
+            
+            <!-- S4 Test Result -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>S4 - Public Opinion</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    Result: <input type="number" name="s4r" id="s4r" min="0" max="9" placeholder="Enter value..." />
+                    Weight: <input type="number" name="s4p" id="s4p" placeholder="Enter weighting value..." />
+                </div>
+                <div class="col-md-6 col-info">
+                    <p>This method aims to reveal how much evolved the project is on the social area. Use independent entities to measure project comunity and it’s activity. Evaluate the total number of project members and comunity members.</p>
+                    <p>For more infomation, please see <a href="../README.md">README</a></p>
+                </div>
+            </div>
+            
+            <!-- S5 Test Result -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>S5 - Accreditation</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    Result: <input type="number" name="s5r" id="s5r" min="0" max="9" placeholder="Enter value..." />
+                    Weight: <input type="number" name="s5p" id="s5p" placeholder="Enter weighting value..." />
+                </div>
+                <div class="col-md-6 col-info">
+                    <p>This method aims to reveal how much credits the project has received from official organizations. Evaluate the total number of official organizations.</p>
+                    <p>For more infomation, please see <a href="../README.md">README</a></p>
+                </div>
+            </div>
+            
+        </form>
+
+    </div>
+
+    <!-- Include javascript -->
+    <script src="assets/js/calculator.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
