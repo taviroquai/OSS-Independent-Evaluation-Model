@@ -5,19 +5,23 @@ NOTE: THIS IS A WORK IN PROGRESS
 
 ## Abstract
 
-This paper purpose is to describe an independent model to evaluate open-source software including it’s project, using pragmatic and independent methods and tests. It is constituted by two main approaches, the objective and subjective. The model described here aims to provide a quantitative overview of the software and it’s project quality to help in decision-making.
+This paper purpose is to describe a tool, an independent model, to evaluate open-source software including it’s project, using pragmatic and independent methods and tests. It is constituted by two main approaches, the objective and subjective. The model described here aims to provide a quantitative overview of the software and it’s project quality, covering diferent areas, from technical to social, to help in decision-making.
 
 ## 1. Approaches, Methods and Tests Overview
 
 Evaluation approaches are conceptually distinct ways of thinking about, designing, and conducting evaluation efforts.[6]
 
-In this paper, it will be considered two main approaches for evaluating software and it’s projects quality: Objective Approach and Subjective Approach. The evaluations results are only valid if the tests listed below are run by at least two independent entities.
+In this paper, it will be considered two main approaches for evaluating software and it’s projects quality: Objective Approach and Subjective Approach. By using a pragmatic method and mathematical expressions, any individual or organization can run this evaluation model.
 
 Considering software as an object, and a set of services that aims to solve problems, it can be evaluated objectively, based on software quality principles[7].
 
 When considering subjective evaluation approaches, it is important to use independent entities and blind checks reviews to eliminate bias and validate evaluation transparency and credibility[5].
 
-This model also uses a strong emphasis on Occam's razor by intersecting the results obtained on the several tests. For example, if the condition S4R > (S2R + S3R) is true, currently the project can be described as a hype.
+**The evaluations results are only valid if the tests listed below are run by, at least, two independent entities.**  
+
+The evaluation can also be repeated over a period of time. The difference in results between repeated tests in time, also reveals if the software is growing or decaying in time.  
+
+This model also uses a strong emphasis on Occam's razor by intersecting the results obtained on the several tests. For instance, if the expession S4R > (S2R + S3R) assets to true, it indicates that there is a strong value given in general by the community users, although, individually and technically it is not given so that much value.
 
 ### 1.1 Objective Approach
 
@@ -88,14 +92,32 @@ IE2 = 0,40;
 TOTAL = 0,43 + 0,50 / 2
 TOTAL = 0,46
 ```
-## 3. Evaluation Exclusion Criteria
+### 2.3. Evaluation Exclusion Criteria
 A list of defined exclusion criteria should be published together with weightings.
 
-### 3.1 Example
+#### 2.3.1 Example
 
 ```
 O1R x O1P < 50
 ```
+
+### 2.4 Confirmation Variation
+Because this model uses Subjective tests to evaluate the object of study, it is almost impossible to obtain exactly the same value among all the independant results, thus, it is necessary to introduce a Variation value that creates a range where the diferences of the independent results can be considered.
+Variation is a constant and a floating point value that is used to confirm the independent evaluation results. It is identified by VAR and must be less, or equal, a quarter of 1: VAR <= 0,25.
+The less the varition is, the more the independent results confirmation is fiable.  
+The **Confirmation** is the difference of the minimum IE and the maximum IE is less than the variation, otherwise.  
+
+```
+VAR >= (MAX(IE1 ... IEN) - MIN(IE1 ... IEN))
+```
+
+#### 2.4.1 Example
+```
+VAR = 0,25;
+0,25 >= (0,50 - 0,43)
+0,25 >= 0,07
+```
+
 
 ## 4. Validation Process
 In favor of transparency of the evaluation process, the evaluation is valid if the following items are publish along with the evaluation process:  
@@ -103,18 +125,11 @@ In favor of transparency of the evaluation process, the evaluation is valid if t
  - The evaluation formula  
  - The evaluation weightings  
  - The list of exclusion criterias  
+ - The confirmation variation value (VAR)
  - The name of the independent entities that will run the evaluation tests  
  - The reports of the individual evaluation [IE1 ... IEN] specifying the results of each test  
+ - The result of the Confirmation
  
-### 4.1 Confirmation
-Variation is a constant and floating point value that is used to confirm the independent evaluation results. It is identified by VAR and must be less, or equal, a quarter of 1: VAR <= 0,25.
-The less the varition is, the more the independent results confirmation is fiable
-Finaly, it is to say that a the Open-source Software Value was confirmed when the difference of the minimum IE and the maximum IE is less than the variation, otherwise, the Software value could not be confirmed.  
-
-```
-VAR >= (MAX(IE1 ... IEN) - MIN(IE1 ... IEN))
-```
-
 ## O1 - Software Quality Assurance Metrics
 This method aims to reveal the software quality in general. All tests should be run by an independant third-party. The following known metrics should be evaluated.
 
