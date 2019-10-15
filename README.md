@@ -21,7 +21,7 @@ When considering subjective evaluation approaches, it is important to use indepe
 
 The evaluation can also be repeated over a period of time. The difference in results between repeated tests in time, also reveals if the software is growing or decaying in time.  
 
-This model also uses a strong emphasis on Occam's razor by intersecting the results obtained on the several tests. For instance, if the expession S4R > (S2R + S3R) assets to true, it indicates that there is a strong value given in general by the community users, although, individually and technically it is not given so that much value.
+This model also uses a strong emphasis on Occam's razor by intersecting the results obtained on the several tests. For instance, if the expession S4R > (S2R + S3R) asserts to true, it indicates that there is a strong value given in general by the community users, although, individually and technically it is not given so that much value.
 
 ### 1.1 Objective Approach
 
